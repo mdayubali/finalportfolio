@@ -1,0 +1,235 @@
+/***********************************
+   General css
+**************************************/
+body{
+    font-size: 1rem;
+    font-family: 'Poppins','Roboto', 'Oswald', 'Lato', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+h1,h2,h3,h4,h5,h6,p,div,a{
+    margin: 0px;
+    padding: 0px;
+}
+section{
+    padding: 60px;
+}
+header:after,
+section:after,
+footer:after,
+.container:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.container{
+    margin: 0px auto;
+    display: block;
+    max-width: 1200px;
+}
+.col-half{
+    width: 46%;
+    float: left;
+    display: block;
+    margin: 2%;
+    padding: 0;
+   
+}
+.col-one-third{
+    width: 29%;
+    float: left;
+    display: block;
+    margin: 2%;
+    /* overflow: hidden; */
+}
+
+.border-after:after{
+    height: 3px;
+    width: 80px;
+    background:  red;
+    content: "";
+    display: block;
+    margin-top: 10px;
+    margin: auto;
+}
+.about .border-after:after{
+    margin-left:8%;
+    margin-top: 10px;
+}
+/***************************
+    Header section
+****************************/
+section.header{
+    background-image: url("../images/header-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* .col-half .about{
+    float: left;
+}
+.col-half .image{
+    float: right;
+} */
+.header .about h1{
+    font-weight: 400;
+}
+.header .about h2{
+    text-transform: capitalize;
+    color: #EC4F8E;
+    padding: 20px 0px;
+}
+.header .about{
+    margin-top: 240px;
+}
+.col-half .image img{
+    height: auto;
+    width: 90%;
+    margin: 10%;
+}
+a.button{
+    margin-top:25px;
+    text-decoration: none;
+    padding: 10px 40px;
+    color: #ffffff;
+    background:  #EC4F8E;
+    display: inline-block;
+    text-transform: uppercase;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+a.button:hover{
+    background-color: #df0a5f;
+}
+/**********************
+    biography
+**********************/
+section.biography{
+    background-image: url("../images/biography-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.biography .image{
+    width: 90%;
+    height: auto;
+}
+.biography .col-half.mr-auto{
+    margin: 20% auto;
+    display: block;
+    padding: 0;
+}
+.biography .about h2{
+    font-size: 38px;
+    margin-bottom: 20px;
+    font-family: 'Lato';
+    font-weight: 500;
+}
+/***************************
+    latest work
+***************************/
+section.latest-work{
+    background-image: url("../images/latest-work-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.text-center{
+    text-align: center;
+}
+.latest-work h2.text-center{
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 60px;
+}
+.col-one-third .image img{
+    width: 100%;
+    box-shadow: 10px 10px 40px gray;
+}
+.col-one-third .image{
+    position: relative;
+}
+.col-one-third .image .hover-effect{
+    position: absolute;
+    display: none;
+    background: rgba(145, 62, 62,0);
+    width: 100%;
+    height: 100%;
+    top:100%;
+    left: 100%;
+    /* top:0;
+    left: 0; */
+    transition: 1s;
+    -webkit-transition: 1s ;
+}
+.col-one-third .image:hover .hover-effect{
+    display: block;
+    background: rgba(145, 62, 62,.5);
+    left: 0;
+    top:0;
+    transition: 1s;
+    -webkit-transition: 1s ;
+}
+.hover-effect a{
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid tomato;
+    padding: 5px 0;
+    border-radius: 5px;
+    color: #ffffff;
+}
+a.click-me{
+    width: 40%;
+    display: block;
+    margin: 45% auto;
+}
+
+/* ****************
+    cliet area
+********************/
+section.client-area{
+    background-image: url("../images/footer-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.col-1{
+    margin-top: 90px;
+}
+.client-area h2{
+    font-size: 38px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+p.width-50{
+    width: 50%;
+    display: block;
+    padding: 0 20%;
+    margin: 0 auto;
+    text-align: center;
+}
+.client-area h3.name{
+    margin-bottom: 10px;
+    font-family: 'Lato';
+}
+.identity{
+    margin-bottom: 25px ;
+    font-weight: 200;
+}
+.card{
+    /* background: #ff416c; */
+    background-image: linear-gradient(to bottom, #ec4f91, #f00a6b);
+    width: 40%;
+    display: block;
+    margin: 5% auto;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+}
+.card .text{
+    font-size: 22px;
+    margin: 15px 0px;
+}
+footer p.text-center{
+    padding: 20px 0px;
+}
